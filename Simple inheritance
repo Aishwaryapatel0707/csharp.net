@@ -1,0 +1,39 @@
+simpel inheritance                                                       using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace simple_inheritance
+{
+    class Program
+    {
+        public string name = "AISHWARYA";
+        public string Class1 = "SYBCA";
+        void student()
+        {
+            Console.WriteLine(name);
+            Console.WriteLine(Class1);
+
+        }
+    }
+    Class exam:Program
+    {
+        string subject = "C#.NET";
+        void abc()
+        {
+            Console.WriteLine(subject);
+        }
+
+        static void Main(string[] args)
+        {
+            exam p = new exam();
+            Console.WriteLine(p.name);
+            Console.WriteLine(p.Class1);
+            Console.WriteLine(p.subject);
+            Console.ReadLine();
+        }
+    }
+}
+
+Output:-AISHWARYA
+SYBCA
+C#.NET
