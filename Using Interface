@@ -1,0 +1,40 @@
+interface                 
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace @interface
+{
+    class Stud
+    {
+        public void showinfo()
+        {
+            Console.WriteLine("NAME : AISHWARYA");
+        }
+    }
+    interface exam
+    {
+        void subinfo();
+    }
+    class result:Stud,exam
+    {
+        public void subinfo()
+        {
+            Console.WriteLine("Subject : C#.NET");
+        }
+
+        static void Main(string[] args)
+        {
+            result r = new result();
+            r.showinfo();
+            r.subinfo();
+            Console.ReadLine();
+        }
+    }
+}
+
+Output:-
+
+NAME : AISHWARYA
+Subject : C#.NET
