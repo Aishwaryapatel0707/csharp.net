@@ -1,0 +1,31 @@
+Parameterize constructor                                       using System;
+
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CSharp_Shell
+{
+    public class Program 
+    {
+    	int num;
+    	string name;
+    	Program(int num1, string name1)
+    	{
+         num=num1;
+    	name=name1;
+      Console.WriteLine("SYBCA");
+        }
+      public static void Main()
+       {
+      Program n=new Program(62,"Aishwarya");
+      Console.WriteLine(n.num);
+      Console.WriteLine(n.name);
+        }
+    }
+}
+
+Output:-
+SYBCA
+62
+Aishwarya
